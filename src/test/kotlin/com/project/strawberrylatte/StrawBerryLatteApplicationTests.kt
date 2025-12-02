@@ -9,5 +9,4 @@ class StrawBerryLatteApplicationTests {
     @Test
     fun contextLoads() {
     }
-
 }
