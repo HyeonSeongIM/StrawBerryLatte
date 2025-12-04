@@ -4,6 +4,7 @@ plugins {
     id("org.springframework.boot") version "3.4.12"
     id("io.spring.dependency-management") version "1.1.7"
     id("org.jlleitschuh.gradle.ktlint") version "13.0.0"
+    kotlin("plugin.jpa") version "1.9.25"
 }
 
 group = "com.project"
@@ -28,6 +29,10 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    api("org.springframework.boot:spring-boot-starter-data-jpa")
+    runtimeOnly("com.mysql:mysql-connector-j")
+    runtimeOnly("com.h2database:h2")
 }
 
 kotlin {
