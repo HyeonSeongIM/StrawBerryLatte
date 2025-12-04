@@ -6,12 +6,12 @@ import jakarta.persistence.Enumerated
 import jakarta.persistence.Table
 
 @Entity
-@Table(name = "member")
-class MemberEntity(
-    val email: String,
-    val password: String,
+@Table(name = "product")
+class ProductEntity (
     val name: String,
-    val phoneNumber: String,
+    val description: String,
+    val imageUrl: String,
+    val price: Long,
     @Enumerated(EnumType.STRING)
-    val role: Role,
-) : BaseEntity()
+    val status: ProductStatus
+    ) : BaseEntity();
