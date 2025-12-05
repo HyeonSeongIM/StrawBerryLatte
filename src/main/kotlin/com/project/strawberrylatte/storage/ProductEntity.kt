@@ -7,11 +7,13 @@ import jakarta.persistence.Table
 
 @Entity
 @Table(name = "product")
-class ProductEntity (
+class ProductEntity(
+    val categoryId: Long,
+    val storeId: Long,
     val name: String,
     val description: String,
     val imageUrl: String,
     val price: Long,
     @Enumerated(EnumType.STRING)
-    val status: ProductStatus
-    ) : BaseEntity();
+    val status: ProductStatus,
+) : BaseEntity()
