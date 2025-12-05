@@ -105,3 +105,6 @@
 * Cart (장바구니)
 * Like (찜)
 * Q&A (Q&A)
+
+**속성 및 관계 분리**
+<img width="1188" height="1066" alt="스크린샷 2025-12-05 오후 2 42 50" src="https://github.com/user-attachments/assets/acc0f356-9d41-4989-8c77-822e48c77927" />
