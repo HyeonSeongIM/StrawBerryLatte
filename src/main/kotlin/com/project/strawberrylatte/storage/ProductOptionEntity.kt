@@ -4,9 +4,9 @@ import jakarta.persistence.Entity
 import jakarta.persistence.Table
 
 @Entity
-@Table(name = "option")
+@Table(name = "productOption")
 class ProductOptionEntity(
     val productId: Long,
     val option: String,
-    val extraFee: Long,
+    val stock: Long,
 ) : BaseEntity()

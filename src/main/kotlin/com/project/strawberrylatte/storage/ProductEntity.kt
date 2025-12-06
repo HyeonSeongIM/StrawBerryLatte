@@ -9,10 +9,8 @@ import jakarta.persistence.Table
 @Table(name = "product")
 class ProductEntity(
     val categoryId: Long,
-    val storeId: Long,
     val name: String,
     val description: String,
-    val imageUrl: String,
     val price: Long,
     @Enumerated(EnumType.STRING)
     val status: ProductStatus,
